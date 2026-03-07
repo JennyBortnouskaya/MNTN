@@ -1,0 +1,30 @@
+.sidebar {
+  position: fixed;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  z-index: 100;
+}
+
+.sidebar ul {
+  list-style: none;
+  text-align: right;
+}
+
+.sidebar li {
+  margin: 16px 0;
+  cursor: pointer;
+  font-size: 14px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.sidebar li:hover {
+  opacity: 1;
+}
+
+.active {
+  opacity: 1;
+  font-weight: 600;
+}

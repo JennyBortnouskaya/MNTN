@@ -1,0 +1,88 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.bg {
+  object-fit: cover;
+  z-index: -2;
+  position: absolute;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+                  180deg,
+                  rgba(11, 29, 38, 0.2) 0%,
+                  rgba(11, 29, 38, 0.7) 70%,
+                  rgba(11, 29, 38, 1) 100%
+  );
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.follow {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: rotate(-90deg) translateX(-50%);
+  transform-origin: left top;
+
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.content {
+  max-width: 600px;
+}
+
+.label {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fbd784;
+}
+
+.content h1 {
+  font-size: 64px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+
+  @media (max-width: 1034px) {
+    font-size: 48px;
+  }
+
+  @media (max-width: 710px) {
+    font-size: 36px;
+  }
+}
+
+.scroll {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.follow {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: rotate(-90deg) translateX(-50%);
+  transform-origin: left top;
+
+  font-size: 14px;
+  letter-spacing: 2px;
+}
