@@ -1,7 +1,5 @@
 import './globals.scss';
-import {Header} from "@/components/header/Header";
 import RightSidebar from "../components/rightSidebar/RightSidebar";
-
 import { Playfair_Display, Inter } from 'next/font/google';
 
 const playfair = Playfair_Display({
@@ -20,7 +18,8 @@ const inter = Inter({
 
 export const metadata = {
     title: 'MNTN Landing Page',
-    description: 'Landing page for MNTN',
+    description: 'Explore the mountains with MNTN – hiking guides, tips, and community.',
+    viewport: 'width=device-width, initial-scale=1',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
