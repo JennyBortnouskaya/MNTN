@@ -9,23 +9,26 @@
 
 .sidebar ul {
   list-style: none;
-  text-align: right;
-}
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
-.sidebar li {
-  margin: 16px 0;
-  cursor: pointer;
-  font-size: 14px;
-  opacity: 0.6;
-  transition: 0.3s;
-}
+  li {
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s ease, color 0.3s ease, transform 0.3s ease;
 
-.sidebar li:hover {
-  opacity: 1;
+    &:hover {
+      opacity: 1;
+      transform: translateX(4px);
+    }
+  }
 }
-
 .active {
   opacity: 1;
-  font-weight: 600;
   color: #fbd784;
+  font-weight: 600;
+  transform: translateX(0);
 }
