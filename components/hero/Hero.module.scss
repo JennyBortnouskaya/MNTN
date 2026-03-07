@@ -43,9 +43,23 @@
   font-size: 14px;
   letter-spacing: 2px;
 }
+.hero .follow {
+  left: 40px;
+  top: 50%;
+
+  @media (max-width: 710px) {
+    display: none; // скрываем на мобильных
+  }
+}
 
 .content {
   max-width: 600px;
+
+  @media (max-width: 710px) {
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 .label {
@@ -59,15 +73,15 @@
 
 .content h1 {
   font-size: 64px;
-  line-height: 1.2;
-  margin-bottom: 40px;
 
   @media (max-width: 1034px) {
     font-size: 48px;
   }
-
   @media (max-width: 710px) {
     font-size: 36px;
+  }
+  @media (max-width: 600px) {
+    font-size: 28px;
   }
 }
 
