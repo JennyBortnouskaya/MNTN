@@ -1,5 +1,18 @@
 .section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
   padding: 160px 0;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+  }
 }
 
 .wrapper {
@@ -61,13 +74,32 @@
 
 .textBlock p {
   line-height: 1.7;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .textBlock a {
   color: #fbd784;
   text-decoration: none;
   font-weight: 600;
+  position: relative;
+  display: inline-block;
+  transition: 0.3s;
+
+  &::after {
+    content: '→';
+    display: inline-block;
+    margin-left: 8px;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+  }
+
+  &:hover::after {
+    transform: translateX(4px);
+  }
+
+  &:hover {
+    color: #fff;
+  }
 }
 
 .image img {

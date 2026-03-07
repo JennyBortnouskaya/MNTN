@@ -13,14 +13,16 @@ export default function Home() {
             <Header/>
             <Hero/>
             <ContentSection
+                id="section-01"
                 number="01"
                 label="GET STARTED"
                 title="What level of hiker are you?"
-                text="Determining what level of hiker you are can be an important tool when planning future hikes..."
+                text="Determining what level of hiker you are..."
                 image={img1}
             />
 
             <ContentSection
+                id="section-02"
                 number="02"
                 label="HIKING ESSENTIALS"
                 title="Picking the right Hiking Gear!"
@@ -30,6 +32,7 @@ export default function Home() {
             />
 
             <ContentSection
+                id="section-03"
                 number="03"
                 label="WHERE YOU GO IS THE KEY"
                 title="Understand Your Map & Timing"
