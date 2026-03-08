@@ -30,14 +30,21 @@
 }
 
 .label {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 12px;
   margin-bottom: 24px;
 
   font-size: 14px;
   letter-spacing: 6px;
   text-transform: uppercase;
-
   color: #fbd784;
+
+  .line {
+    width: 60px;
+    height: 2px;
+    background-color: #fbd784;
+  }
 }
 
 .content h1 {
@@ -62,6 +69,51 @@
   border-bottom: 2px solid white;
 
   transform: rotate(45deg);
+}
+.leftSidebar {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  z-index: 10;
+
+  .followLabel {
+    font-family: Helvetica, Arial, sans-serif;
+    writing-mode: vertical-rl;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #ffffff;
+  }
+
+  .socialIcons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .icon {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 14px;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}
+
+/* Скрываем на мобильных */
+@media (max-width: 710px) {
+  .leftSidebar {
+    display: none;
+  }
 }
 
 /* -------- responsive -------- */
