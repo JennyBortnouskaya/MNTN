@@ -1,18 +1,28 @@
-import React from "react";
-import styles from "./Header.module.scss";
+'use client'
 
-export const Header: React.FC = () => {
+import styles from './Header.module.scss'
+
+export default function Header() {
     return (
         <header className={styles.header}>
-            <div className={styles.logo}>MNTN</div>
-            <nav className={styles.nav}>
-                <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#section1">About</a></li>
-                    <li><a href="#section2">Features</a></li>
-                    <li><a href="#section3">Contact</a></li>
-                </ul>
-            </nav>
+            <div className="container">
+                <div className={styles.inner}>
+                    <div className={styles.logo}>
+                        MNTN
+                    </div>
+                    <nav className={styles.nav}>
+                        <a href="#">Equipment</a>
+                        <a href="#">About us</a>
+                        <a href="#">Blog</a>
+                    </nav>
+
+                    <div className={styles.account}>
+                        <span>Account</span>
+                    </div>
+
+                </div>
+
+            </div>
         </header>
-    );
-};
+    )
+}

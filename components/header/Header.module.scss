@@ -1,52 +1,54 @@
 .header {
-  width: 100%;
-  padding: 20px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffffff; // позже заменим по Figma
-  position: sticky;
+  position: absolute;
   top: 0;
+  left: 0;
+  width: 100%;
+
+  padding: 40px 0;
+
   z-index: 100;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
   font-size: 24px;
   font-weight: 700;
-  color: #111; // изменить по Figma
+  letter-spacing: 4px;
 }
 
-.nav ul {
+.nav {
   display: flex;
-  gap: 30px;
-  list-style: none;
-}
+  gap: 40px;
 
-.nav a {
-  text-decoration: none;
-  color: #111; // заменить по Figma
-  font-weight: 500;
-  transition: color 0.3s;
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    opacity: 0.85;
+    transition: 0.3s;
+  }
 
-  &:hover {
-    color: #555; // hover эффект
+  a:hover {
+    opacity: 1;
   }
 }
 
-/* Responsive breakpoints */
+.account {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* -------- responsive -------- */
+
 @media (max-width: 800px) {
-  .nav ul {
-    gap: 20px;
-  }
-}
 
-@media (max-width: 600px) {
-  .header {
-    padding: 15px 20px;
+  .nav {
+    display: none;
   }
 
-  .nav ul {
-    gap: 15px;
-  }
 }

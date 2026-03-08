@@ -1,33 +1,34 @@
-import './globals.scss';
-import RightSidebar from "../components/rightSidebar/RightSidebar";
-import { Playfair_Display, Inter } from 'next/font/google';
+import type { Metadata } from "next";
+import "./globals.scss";
 
-const playfair = Playfair_Display({
-    subsets: ['latin'],
-    weight: ['400','700'],
-    variable: '--font-playfair',
-    display: 'swap'
-});
+import Header from "@/components/header/Header";
+import RightSidebar from "@/components/rightSidebar/RightSidebar";
+import Footer from "@/components/footer/Footer";
 
-const inter = Inter({
-    subsets: ['latin'],
-    weight: ['400','500','700'],
-    variable: '--font-inter',
-    display: 'swap'
-});
-
-export const metadata = {
-    title: 'MNTN Landing Page',
-    description: 'Explore the mountains with MNTN – hiking guides, tips, and community.',
-    viewport: 'width=device-width, initial-scale=1',
+export const metadata: Metadata = {
+    title: "MNTN",
+    description: "Hiking guide landing page",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+                                       children,
+                                   }: {
+    children: React.ReactNode;
+}) {
     return (
-        <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
+        <html lang="en">
         <body>
+
+        <Header />
+
         <RightSidebar />
-        {children}
+
+        <main>
+            {children}
+        </main>
+
+        <Footer />
+
         </body>
         </html>
     );

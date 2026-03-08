@@ -1,40 +1,68 @@
-'use client';
+'use client'
 
-import { useState, useEffect } from 'react';
-import styles from './RightSidebar.module.scss';
+import { useEffect, useState } from "react"
+import styles from "./RightSidebar.module.scss"
 
 export default function RightSidebar() {
-    const [activeSection, setActiveSection] = useState('start');
+
+    const [active, setActive] = useState("start")
 
     useEffect(() => {
-        const sections = ['01', '02', '03'];
 
         const handleScroll = () => {
-            const scrollPos = window.scrollY + window.innerHeight / 3; // чуть выше середины
-            let current = 'start';
 
-            for (let i = 0; i < sections.length; i++) {
-                const el = document.getElementById(`section-${sections[i]}`);
-                if (el && scrollPos >= el.offsetTop) {
-                    current = sections[i];
-                }
+            const scroll = window.scrollY
+
+            const s1 = document.getElementById("section01")
+            const s2 = document.getElementById("section02")
+            const s3 = document.getElementById("section03")
+
+            if (!s1 || !s2 || !s3) return
+
+            if (scroll >= s3.offsetTop - 200) {
+                setActive("03")
+            } else if (scroll >= s2.offsetTop - 200) {
+                setActive("02")
+            } else if (scroll >= s1.offsetTop - 200) {
+                setActive("01")
+            } else {
+                setActive("start")
             }
-            setActiveSection(current);
-        };
 
-        window.addEventListener('scroll', handleScroll);
-        handleScroll(); // при загрузке
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+        }
+
+        window.addEventListener("scroll", handleScroll)
+
+        return () => window.removeEventListener("scroll", handleScroll)
+
+    }, [])
 
     return (
+
         <div className={styles.sidebar}>
+
             <ul>
-                <li className={activeSection === 'start' ? styles.active : ''}>Start</li>
-                <li className={activeSection === '01' ? styles.active : ''}>01</li>
-                <li className={activeSection === '02' ? styles.active : ''}>02</li>
-                <li className={activeSection === '03' ? styles.active : ''}>03</li>
+
+                <li className={active === "start" ? styles.active : ""}>
+                    Start
+                </li>
+
+                <li className={active === "01" ? styles.active : ""}>
+                    01
+                </li>
+
+                <li className={active === "02" ? styles.active : ""}>
+                    02
+                </li>
+
+                <li className={active === "03" ? styles.active : ""}>
+                    03
+                </li>
+
             </ul>
+
         </div>
-    );
+
+    )
+
 }

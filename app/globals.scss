@@ -1,18 +1,35 @@
 @use "../styles/reset";
 @use "../styles/variables";
-@use "../styles/main";
 @use "../styles/layout";
+@use "../styles/main";
 
 :root {
-  --font-playfair: 'Playfair Display', serif;
-  --font-inter: 'Inter', sans-serif;
-}
-body {
-  font-family: var(--font-inter), serif;
-  color: #fff;
-  background: #0b1d26;
+  --color-bg: #0b1d26;
+  --color-accent: #fbd784;
+  --color-text: #ffffff;
 }
 
-h1, h2, h3, h4, h5, h6 {
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-inter), serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-playfair), serif;
+}
+
+main {
+  position: relative;
 }

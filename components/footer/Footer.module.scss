@@ -1,81 +1,96 @@
 .footer {
-  background-color: #0b1d26;
-  color: #fff;
-  padding: 80px 0;
+  padding: 160px 0 80px;
+}
 
-  .top {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 40px;
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 120px;
+}
+
+.brand {
+  max-width: 300px;
+
+  h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
   }
 
-  .brand {
-    h2 {
-      font-family: var(--font-playfair), serif;
-      font-size: 32px;
-      margin-bottom: 8px;
-    }
-    p {
-      font-family: var(--font-inter), serif;
-      font-size: 14px;
-      opacity: 0.7;
-    }
+  p {
+    line-height: 1.7;
+    opacity: 0.8;
+  }
+}
+
+.links {
+  display: flex;
+  gap: 120px;
+
+  h4 {
+    color: #fbd784;
+    margin-bottom: 24px;
+    font-size: 18px;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    margin-bottom: 12px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+
+  a:hover {
+    opacity: 1;
+  }
+}
+
+.bottom {
+  margin-top: 120px;
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+/* -------- responsive -------- */
+
+@media (max-width: 1034px) {
+
+  .top {
+    gap: 80px;
   }
 
   .links {
-    display: flex;
+    gap: 80px;
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .top {
+    flex-direction: column;
     gap: 60px;
-    flex-wrap: wrap;
-
-    h4 {
-      font-family: var(--font-playfair), serif;
-      font-size: 16px;
-      margin-bottom: 12px;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-
-      li {
-        margin-bottom: 8px;
-
-        a {
-          color: #fff;
-          text-decoration: none;
-          opacity: 0.7;
-          font-family: var(--font-inter), serif;
-          transition: 0.3s;
-
-          &:hover {
-            opacity: 1;
-            color: #fbd784;
-          }
-        }
-      }
-    }
   }
 
-  .bottom {
-    margin-top: 60px;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    padding-top: 20px;
-    text-align: center;
-    font-size: 14px;
-    opacity: 0.7;
-    font-family: var(--font-inter), serif;
+  .links {
+    gap: 60px;
   }
 
-  @media (max-width: 800px) {
-    padding: 60px 20px;
-    .top {
-      flex-direction: column;
-      gap: 40px;
-    }
-    .links {
-      flex-direction: column;
-      gap: 40px;
-    }
+}
+
+@media (max-width: 600px) {
+
+  .links {
+    flex-direction: column;
+    gap: 40px;
   }
+
 }

@@ -1,150 +1,89 @@
 .section {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
   padding: 160px 0;
-
-  &.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  &.hidden {
-    opacity: 0;
-    transform: translateY(50px);
-  }
 }
 
 .wrapper {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 120px;
-
-  &.reverse {
-    flex-direction: row-reverse;
-  }
-
-  @media (max-width: 1034px) {
-    gap: 80px;
-  }
-
-  @media (max-width: 710px) {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .wrapper:hover .image img {
-    transform: scale(1.03);
-    transition: transform 0.5s ease;
-  }
-
-  @media (max-width: 600px) {
-    gap: 32px;
-  }
 }
 
 .reverse {
-  .textBlock {
-    order: 2;
-  }
-
-  .image {
-    order: 1;
-  }
+  flex-direction: row-reverse;
 }
 
 .textBlock {
   position: relative;
-  max-width: 520px;
+  max-width: 550px;
 }
 
 .number {
   position: absolute;
   top: -120px;
-  left: -80px;
+  left: -120px;
 
   font-size: 200px;
   font-weight: 700;
-  color: rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.05);
 }
 
 .label {
-  display: inline-block;
-  margin-bottom: 20px;
+  display: block;
+  margin-bottom: 24px;
 
   font-size: 14px;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   text-transform: uppercase;
 
   color: #fbd784;
 }
 
-.textBlock {
-  flex: 1;
-  transition: transform 0.5s ease, opacity 0.5s ease;
-  h2 {
-    font-size: 48px;
-
-    @media (max-width: 1034px) {
-      font-size: 36px;
-    }
-
-    @media (max-width: 710px) {
-      font-size: 28px;
-    }
-
-    @media (max-width: 600px) {
-      font-size: 24px;
-    }
-  }
-
-  p {
-    line-height: 1.6;
-  }
-  .section:hover & {
-    transform: translateY(-5px);
-    opacity: 1;
-  }
+.textBlock h2 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 24px;
 }
 
 .textBlock p {
   line-height: 1.7;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
-.textBlock a {
+.link {
   color: #fbd784;
   text-decoration: none;
   font-weight: 600;
-  position: relative;
-  display: inline-block;
-  transition: 0.3s ease;
-
-  &::after {
-    content: '→';
-    display: inline-block;
-    margin-left: 8px;
-    transform: translateX(0);
-    transition: transform 0.3s ease;
-  }
-
-  &:hover::after {
-    transform: translateX(4px);
-  }
-
-  &:hover {
-    color: #fff;
-  }
 }
 
-.image {
-  flex: 1;
-  max-width: 500px;
-  width: 100%;
-  height: auto;
+.image img {
+  object-fit: cover;
+  border-radius: 8px;
+}
 
-  img {
-    object-fit: cover;
-    border-radius: 8px;
+/* ---------- responsive ---------- */
+
+@media (max-width: 1034px) {
+
+  .wrapper {
+    gap: 80px;
   }
+
+  .textBlock h2 {
+    font-size: 36px;
+  }
+
+}
+
+@media (max-width: 710px) {
+
+  .wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .number {
+    display: none;
+  }
+
 }
