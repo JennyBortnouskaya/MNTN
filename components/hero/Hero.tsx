@@ -5,6 +5,7 @@ import Image from "next/image"
 import bg from "@/assets/main_bg.png"
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import SouthOutlinedIcon from '@mui/icons-material/SouthOutlined'
 
 export default function Hero() {
     return (
@@ -40,7 +41,7 @@ export default function Hero() {
                     </h1>
                     <div className={styles.scroll}>
                         <span>scroll down</span>
-                        <div className={styles.arrow}></div>
+                        <SouthOutlinedIcon className={styles.arrow} />
                     </div>
                 </div>
             </div>
