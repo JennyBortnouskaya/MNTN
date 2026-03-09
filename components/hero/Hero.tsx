@@ -11,13 +11,7 @@ export default function Hero() {
     return (
         <section className={styles.hero}>
 
-            <Image
-                src={bg}
-                alt="mountains"
-                fill
-                priority
-                className={styles.bg}
-            />
+
 
             <div className={styles.overlay}></div>
 
