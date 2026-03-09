@@ -1,8 +1,6 @@
 'use client'
 
 import styles from "./Hero.module.scss"
-import Image from "next/image"
-import bg from "@/assets/main_bg.png"
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import SouthOutlinedIcon from '@mui/icons-material/SouthOutlined'
