@@ -33,3 +33,61 @@ h6 {
 main {
   position: relative;
 }
+/* Chronicle Display */
+@font-face {
+  font-family: 'Chronicle Display Black';
+  src: url('../public/fonts/chronicle-display/Chronicle Display Black.otf') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Chronicle Display Italic';
+  src: url('../public/fonts/chronicle-display/Chronicle Display Light Italic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Chronicle Display Roman';
+  src: url('../public/fonts/chronicle-display/Chronicle Display Roman.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Chronicle Display Semibold';
+  src: url('../public/fonts/chronicle-display/Chronicle Display Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+/* Gilroy */
+@font-face {
+  font-family: 'Gilroy Bold';
+  src: url('../public/fonts/gilroy-bold/Gilroy-Bold.woff2') format('woff2');
+  //font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Gilroy Bold';
+  src: url('../public/fonts/gilroy-bold/Gilroy-Heavy.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Gilroy Light';
+  src: url('../public/fonts/gilroy-bold/Gilroy-Light.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Gilroy Medium';
+  src: url('../public/fonts/gilroy-bold/Gilroy-Medium.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Gilroy Regular';
+  src: url('../public/fonts/gilroy-bold/Gilroy-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
