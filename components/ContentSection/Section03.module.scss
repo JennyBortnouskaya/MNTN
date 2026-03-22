@@ -1,3 +1,30 @@
+.section03 {
+  padding: 147px 0 1px;
+}
+
+.section03Heading {
+  margin: 0 21px 19px 0;
+  font-family: Chronicle Display, serif;
+  font-size: 49.6px;
+  font-weight: 500;
+  line-height: 1.16;
+  color: #ffffff;
+
+  @media (max-width: 1034px) {
+    font-size: 36px;
+  }
+}
+
+.section03Paragraph {
+  margin-bottom: 16px;
+  font-family: Gilroy, sans-serif;
+  font-size: 11.2px;
+  font-weight: 200;
+  line-height: 2;
+  letter-spacing: 1.15px;
+  color: #ffffff;
+}
+
 .section {
   display: flex;
   align-items: center;
@@ -20,7 +47,7 @@
 
   h2 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin: 0px 21px 19px 0;
 
     @media (max-width: 1034px) {
       font-size: 2rem;
@@ -44,8 +71,8 @@
   }
 }
 
-.image {
-  flex: 1;
+.section03Image {
+  margin: -4px 115px 0 82px;
 
   @media (max-width: 710px) {
     margin-top: 30px;

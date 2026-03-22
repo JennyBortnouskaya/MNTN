@@ -1,5 +1,28 @@
-.section {
-  padding: 160px 0;
+.section02 {
+  padding: 142px 0 1px 0;
+}
+
+.section02Heading {
+  margin: 0 21px 19px 0;
+  font-family: Chronicle Display, serif;
+  font-size: 49.6px;
+  font-weight: 500;
+  line-height: 1.16;
+  color: #ffffff;
+
+  @media (max-width: 1034px) {
+    font-size: 36px;
+  }
+}
+
+.section02Paragraph {
+  margin-bottom: 16px;
+  font-family: Gilroy, sans-serif;
+  font-size: 11.2px;
+  font-weight: 200;
+  line-height: 2;
+  letter-spacing: 1.15px;
+  color: #ffffff;
 }
 
 .wrapper {
@@ -19,49 +42,17 @@
 }
 
 .number {
+  color: #ffffff0d;
+  font-family: Gilroy Medium, sans-serif;
+  font-size: 171px;
+  font-weight: 800;
   position: absolute;
-  top: -120px;
-  left: -80px;
-
-  font-size: 200px;
-  font-weight: 700;
-
-  color: rgba(255,255,255,0.08);
+  top: -13px;
+  left: -18px;
 }
 
-.label {
-  display: inline-block;
-  margin-bottom: 20px;
-
-  font-size: 14px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-
-  color: #fbd784;
-}
-
-.textBlock h2 {
-  font-size: 48px;
-  line-height: 1.2;
-  margin-bottom: 20px;
-
-  @media (max-width: 1034px) {
-    font-size: 36px;
-  }
-}
-
-.textBlock p {
-  line-height: 1.7;
-  margin-bottom: 24px;
-}
-
-.textBlock a {
-  color: #fbd784;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.image img {
+.section02Image {
   width: 100%;
   height: auto;
+  margin: 3px 102px 0 127px;
 }

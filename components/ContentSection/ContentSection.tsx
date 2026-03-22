@@ -1,7 +1,7 @@
 'use client'
 
 import styles from './ContentSection.module.scss'
-import Image, { StaticImageData } from 'next/image'
+import Image, {StaticImageData} from 'next/image'
 
 type Props = {
     number: string
@@ -10,6 +10,10 @@ type Props = {
     text: string
     image: StaticImageData
     reverse?: boolean
+    className?: string
+    imageClassName?: string
+    headingClassName: string
+    paragraphClassName: string
 }
 
 export default function ContentSection({
@@ -19,9 +23,13 @@ export default function ContentSection({
                                            text,
                                            image,
                                            reverse,
+                                           className,
+                                           imageClassName,
+                                           headingClassName,
+                                           paragraphClassName,
                                        }: Props) {
     return (
-        <section className={styles.section}>
+        <section className={className}>
             <div className="container">
 
                 <div className={`${styles.wrapper} ${reverse ? styles.reverse : ''}`}>
@@ -34,9 +42,9 @@ export default function ContentSection({
               {label}
             </span>
 
-                        <h2>{title}</h2>
+                        <h2 className={headingClassName}>{title}</h2>
 
-                        <p>{text}</p>
+                        <p className={paragraphClassName}>{text}</p>
 
                         <a href="#" className={styles.link}>
                             read more →
@@ -50,6 +58,7 @@ export default function ContentSection({
                             alt={title}
                             width={500}
                             height={700}
+                            className={imageClassName}
                         />
                     </div>
 
