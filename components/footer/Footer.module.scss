@@ -22,34 +22,44 @@
 }
 
 .top {
-  display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
-  gap: 120px;
+  gap: 180px;
+  display: flex;
+  padding: 137px 0 0 0;
+  height: 200px;
 }
 
 .brand {
   max-width: 300px;
 
   h2 {
-    font-size: 32px;
-    margin-bottom: 16px;
+    font-size: 26px;
+    margin-bottom: 14px;
+    font-family: 'Chronicle Display', serif;
+    padding: 0 0 0 15px;
   }
 
   p {
-    line-height: 1.7;
-    opacity: 0.8;
+    opacity: .8;
+    width: 249px;
+    font-family: Gilroy, sans-serif;
+    font-size: 13.6px;
+    line-height: 1.6;
+    padding: 0 0 0 15px;
   }
 }
 
 .links {
   display: flex;
-  gap: 120px;
+  gap: 151px;
+  padding: 4px 0 0 10px;
 
   h4 {
     color: #fbd784;
-    margin-bottom: 24px;
-    font-size: 18px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-family: Gilroy, sans-serif;
   }
 
   ul {
@@ -57,7 +67,8 @@
   }
 
   li {
-    margin-bottom: 12px;
+    margin-bottom: 15.5px;
+    font-size: 13px;
   }
 
   a {
@@ -65,6 +76,7 @@
     color: white;
     opacity: 0.8;
     transition: 0.3s;
+    font-family: 'Gilroy Light', sans-serif;
   }
 
   a:hover {
@@ -73,9 +85,11 @@
 }
 
 .bottom {
-  margin-top: 120px;
-  opacity: 0.5;
-  font-size: 14px;
+  opacity: .5;
+  margin-top: 124px;
+  font-family: Gilroy Light, sans-serif;
+  font-size: 13px;
+  padding: 0 0 0 130px;
 }
 
 /* -------- responsive -------- */
