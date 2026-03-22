@@ -21,17 +21,16 @@
 }
 
 .nav {
-  gap: 24px;
+  gap: 31px;
   display: flex;
-  padding: 0 0 0 4px;
-  font-family: Helvetica, Arial, sans-serif;
 
   a {
     text-decoration: none;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     opacity: 0.85;
     transition: 0.3s;
+    font-family: Gilroy, sans-serif;
   }
 
   a:hover {
@@ -40,11 +39,13 @@
 }
 
 .account {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 16px;
   cursor: pointer;
+  align-items: center;
+  gap: 6px;
+  font-family: Gilroy, sans-serif;
+  font-size: 13px;
+  display: flex;
+  padding: 3px 6px 0 0;
 
   .icon {
     font-size: 20px;

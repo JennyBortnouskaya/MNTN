@@ -82,7 +82,7 @@
 .leftSidebar {
   position: absolute;
   left: 40px;
-  top: 24.3%;
+  top: 86.3%;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
@@ -97,6 +97,7 @@
     font-size: 12px;
     letter-spacing: 1px;
     color: #ffffff;
+    padding: 2px 0 0 2px;
   }
 
   .socialIcons {
