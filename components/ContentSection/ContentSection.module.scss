@@ -19,8 +19,7 @@
 }
 
 .wrapper {
-  justify-content: space-evenly;
-  gap: 13px;
+  justify-content: flex-end;
   display: flex;
 }
 
@@ -31,13 +30,13 @@
 .textBlock {
   position: relative;
   max-width: 550px;
-  padding: 100px 0 0 125px;
+  padding: 100px 0 0 91px;
 }
 
 .number {
   position: absolute;
   top: -23px;
-  left:14px;
+  left: -13px;
   font-size: 175px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.05);
@@ -57,30 +56,34 @@
 }
 
 .textBlock h2 {
-  margin-bottom: 24px;
-  font-size: 49px;
+  margin: 0 10px 19px 0;
+  font-family: Chronicle Display, serif;
+  font-size: 49.6px;
   line-height: 1.16;
-  font-family: 'Chronicle Display', serif;
 }
 
 .textBlock p {
-  margin-bottom: 27px;
-  line-height: 1.7;
-  font-family: Gilroy, sans-serif;
-  font-size: 13px;
   letter-spacing: 1px;
+  margin-bottom: 16px;
+  font-family: Gilroy, sans-serif;
+  font-size: 11.5px;
+  font-weight: 200;
+  line-height: 2;
 }
 
 .link {
   color: #fbd784;
+  font-family: Gilroy, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
   text-decoration: none;
-  font-weight: 600;
 }
 
 .image img {
   object-fit: cover;
-  max-width: 400px;
-  max-height: 600px;
+  max-width: 410px;
+  max-height: 528px;
+  margin: 0 114px 0 83px;
 }
 
 /* ---------- responsive ---------- */
