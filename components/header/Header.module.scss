@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 40px 0;
+  padding: 17px 0;
   z-index: 100;
 }
 
@@ -15,19 +15,21 @@
 
 .logo {
   letter-spacing: 2px;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 700;
-  padding: 2px 0 0 17px;
+  padding: 0 0 0 29px;
 }
 
 .nav {
-  gap: 31px;
+  gap: 44px;
+  font-family: Gilroy Bold, sans-serif;
   display: flex;
+  padding-right: 11px;
 
   a {
     text-decoration: none;
     color: white;
-    font-size: 14px;
+    font-size: 18px;
     opacity: 0.85;
     transition: 0.3s;
     font-family: Gilroy, sans-serif;
@@ -41,11 +43,11 @@
 .account {
   cursor: pointer;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
+  padding: 0 4px 0 0;
   font-family: Gilroy, sans-serif;
-  font-size: 13px;
+  font-size: 19px;
   display: flex;
-  padding: 3px 6px 0 0;
 
   .icon {
     font-size: 20px;
