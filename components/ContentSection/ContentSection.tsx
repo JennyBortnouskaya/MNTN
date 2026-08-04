@@ -2,6 +2,7 @@
 
 import styles from './ContentSection.module.scss'
 import Image, {StaticImageData} from 'next/image'
+import SouthOutlinedIcon from "@mui/icons-material/SouthOutlined";
 
 type Props = {
     number: string
@@ -39,6 +40,7 @@ export default function ContentSection({
                         <span className={styles.number}>{number}</span>
 
                         <span className={styles.label}>
+                             <span className={styles.line}></span>
               {label}
             </span>
 
@@ -47,7 +49,8 @@ export default function ContentSection({
                         <p className={paragraphClassName}>{text}</p>
 
                         <a href="#" className={styles.link}>
-                            read more →
+                            read more
+                            <SouthOutlinedIcon className={styles.arrow} />
                         </a>
 
                     </div>

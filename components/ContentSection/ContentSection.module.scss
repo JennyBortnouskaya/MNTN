@@ -1,5 +1,5 @@
 .wrapper {
-  justify-content: flex-end;
+  justify-content: space-evenly;
   display: flex;
 }
 
@@ -8,44 +8,64 @@
 }
 
 .textBlock {
+  width: 904px;
+  padding: 195px 0 0 242px;
   position: relative;
-  max-width: 550px;
-  padding: 100px 0 0 91px;
 }
 
 .number {
   color: #ffffff0d;
   font-family: Gilroy Medium, sans-serif;
-  font-size: 171px;
+  font-size: 225px;
   font-weight: 800;
   position: absolute;
-  top: -13px;
-  left: -18px;
+  top: 41px;
+  left: 95px;
+  letter-spacing: 12px;
+}
+.line {
+  background-color: #fbd784;
+  width: 72px;
+  height: 1px;
+  margin: 0 24px 0 0;
 }
 
 .label {
-  letter-spacing: 3.8px;
+  letter-spacing: 5.1px;
   text-transform: uppercase;
   color: #fbd784;
-  margin-bottom: 13px;
-  padding: 4px 0 0 68px;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 1px 0 0;
   font-family: Gilroy, sans-serif;
-  font-size: 13px;
-  display: block;
+  font-size: 17px;
+  display: flex;
+  font-weight: 600;
 }
 
 .link {
   color: #fbd784;
+  letter-spacing: .8px;
   font-family: Gilroy, sans-serif;
+  font-size: 18px;
   font-weight: 300;
-  font-size: 14px;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.arrow{
+  transform: rotate(270deg);
 }
 
 .image img {
   object-fit: cover;
-  max-width: 410px;
-  max-height: 528px;
+  max-width: 566px;
+  max-height: 720px;
+  margin: 0px 72px 0 0;
+  top: 56px;
+  position: relative;
 }
 
 /* ---------- responsive ---------- */
