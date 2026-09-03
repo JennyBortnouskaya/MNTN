@@ -1,5 +1,7 @@
 .section01 {
-  padding: 11px 0 1px;
+  padding: 0 0 205px 0;
+  position: relative;
+  top: 340px;
 }
 
 .section01Heading {
@@ -39,9 +41,10 @@
   }
 }
 
-.textBlock {
+.content {
   position: relative;
-  max-width: 520px;
+  top: 196px;
+  left: 156px;
 }
 
 .number {
@@ -65,7 +68,7 @@
 }
 
 .section01Image {
-  width: 100%;
-  height: auto;
-  margin: 0 243px 0 84px;
+  margin: 0 75px 0 0;
+  top: 58px;
+  left: 84px;
 }

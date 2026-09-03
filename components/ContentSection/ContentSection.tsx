@@ -13,6 +13,7 @@ type Props = {
     reverse?: boolean
     className?: string
     imageClassName?: string
+    contentClassName: string
     headingClassName: string
     paragraphClassName: string
 }
@@ -26,6 +27,7 @@ export default function ContentSection({
                                            reverse,
                                            className,
                                            imageClassName,
+                                           contentClassName,
                                            headingClassName,
                                            paragraphClassName,
                                        }: Props) {
@@ -35,14 +37,14 @@ export default function ContentSection({
 
                 <div className={`${styles.wrapper} ${reverse ? styles.reverse : ''}`}>
 
-                    <div className={styles.textBlock}>
+                    <div className={`${styles.content} ${contentClassName}`}>
 
                         <span className={styles.number}>{number}</span>
 
                         <span className={styles.label}>
-                             <span className={styles.line}></span>
-              {label}
-            </span>
+                            <span className={styles.line}></span>
+                            {label}
+                        </span>
 
                         <h2 className={headingClassName}>{title}</h2>
 

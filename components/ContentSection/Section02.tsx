@@ -14,6 +14,7 @@ Let’s start with clothing. A typical mistake hiking beginners make is wearing 
             reverse
             className={styles.section02}
             imageClassName={styles.section02Image}
+            contentClassName={styles.content}
             headingClassName={styles.section02Heading}
             paragraphClassName={styles.section02Paragraph}
         />

@@ -1,14 +1,18 @@
 .section02 {
-  padding: 142px 0 1px 0;
+  padding: 196px 0 1px;
+  position: relative;
+  top: 143px;
 }
 
 .section02Heading {
-  margin: 0 21px 19px 0;
-  font-family: Chronicle Display, serif;
-  font-size: 49.6px;
+  color: #fff;
+  letter-spacing: 1.1px;
+  margin: 0 0 34px;
+  font-family: Chronicle Display Roman, serif;
+  font-size: 64px;
   font-weight: 500;
   line-height: 1.16;
-  color: #ffffff;
+  width: 600px;
 
   @media (max-width: 1034px) {
     font-size: 36px;
@@ -16,13 +20,14 @@
 }
 
 .section02Paragraph {
-  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+  color: #fff;
+  margin-bottom: 23px;
   font-family: Gilroy, sans-serif;
-  font-size: 11.2px;
+  font-size: 18px;
   font-weight: 200;
-  line-height: 2;
-  letter-spacing: 1.15px;
-  color: #ffffff;
+  line-height: 32px;
+  width: 636px;
 }
 
 .wrapper {
@@ -36,23 +41,24 @@
   }
 }
 
-.textBlock {
+.content {
   position: relative;
   max-width: 520px;
+  top: 193px;
+  right: 29px;
 }
 
 .number {
   color: #ffffff0d;
-  font-family: Gilroy Medium, sans-serif;
-  font-size: 171px;
-  font-weight: 800;
+  // font-family: Gilroy Medium, sans-serif;
+  font-size: 200px;
+  font-weight: 700;
   position: absolute;
-  top: -13px;
-  left: -18px;
+  top: -155px;
+  left: -148px;
 }
 
 .section02Image {
-  width: 100%;
-  height: auto;
-  margin: 3px 102px 0 127px;
+  top: 55px;
+  left: -61px;
 }

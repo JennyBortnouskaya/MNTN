@@ -12,6 +12,7 @@ export default function Section03() {
             image={img}
             className={styles.section03}
             imageClassName={styles.section03Image}
+            contentClassName={styles.content}
             headingClassName={styles.section03Heading}
             paragraphClassName={styles.section03Paragraph}
         />

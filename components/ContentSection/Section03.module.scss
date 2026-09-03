@@ -3,12 +3,14 @@
 }
 
 .section03Heading {
-  margin: 0 21px 19px 0;
-  font-family: Chronicle Display, serif;
-  font-size: 49.6px;
+  color: #fff;
+  letter-spacing: 1.1px;
+  margin: 0 0 34px;
+  font-family: Chronicle Display Roman, serif;
+  font-size: 64px;
   font-weight: 500;
   line-height: 1.16;
-  color: #ffffff;
+  width: 600px;
 
   @media (max-width: 1034px) {
     font-size: 36px;
@@ -16,13 +18,21 @@
 }
 
 .section03Paragraph {
-  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+  color: #fff;
+  margin-bottom: 23px;
   font-family: Gilroy, sans-serif;
-  font-size: 11.2px;
+  font-size: 18px;
   font-weight: 200;
-  line-height: 2;
-  letter-spacing: 1.15px;
-  color: #ffffff;
+  line-height: 32px;
+  width: 650px;
+}
+
+.content {
+  position: relative;
+  max-width: 520px;
+  top: 388px;
+  left: 158px;
 }
 
 .section {
@@ -73,6 +83,8 @@
 
 .section03Image {
   margin: -4px 115px 0 82px;
+  top: 254px;
+  left: 132px;
 
   @media (max-width: 710px) {
     margin-top: 30px;

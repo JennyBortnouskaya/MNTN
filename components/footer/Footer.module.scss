@@ -2,11 +2,15 @@
   width: 100%;
   background: #0b1d26;
   color: #fff;
+  padding: 315px 0 0 0;
 }
 
 .footer h1, .footer h2, .footer h3 {
-  font-family: 'Century Gothic', sans-serif;
+  font-family: Chronicle Display Roman, serif;
+  font-size: 64px;
   font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: 1.1px;
   color: #fff;
 }
 
@@ -24,7 +28,7 @@
 .top {
   justify-content: space-around;
   align-items: flex-start;
-  gap: 180px;
+  gap: 38px;
   display: flex;
   padding: 137px 0 0 0;
   height: 200px;
@@ -32,33 +36,35 @@
 
 .brand {
   max-width: 300px;
+  position: relative;
+  right: 45px;
 
   h2 {
-    font-size: 26px;
-    margin-bottom: 14px;
-    font-family: 'Chronicle Display', serif;
-    padding: 0 0 0 15px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.16;
+    letter-spacing: 2.9px;
   }
 
   p {
     opacity: .8;
-    width: 249px;
-    font-family: Gilroy, sans-serif;
-    font-size: 13.6px;
-    line-height: 1.6;
-    padding: 0 0 0 15px;
+    padding: 28px 0 0;
+    font-family: Gilroy Medium, sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
   }
 }
 
 .links {
+  gap: 209px;
   display: flex;
-  gap: 151px;
-  padding: 4px 0 0 10px;
+  position: relative;
+  right: -68px;
 
   h4 {
     color: #fbd784;
-    margin-bottom: 20px;
-    font-size: 17px;
+    margin-bottom: 25px;
+    font-size: 23px;
     font-family: Gilroy, sans-serif;
   }
 
@@ -67,8 +73,8 @@
   }
 
   li {
-    margin-bottom: 15.5px;
-    font-size: 13px;
+    margin-bottom: 19.5px;
+    font-size: 18px;
   }
 
   a {
@@ -76,7 +82,7 @@
     color: white;
     opacity: 0.8;
     transition: 0.3s;
-    font-family: 'Gilroy Light', sans-serif;
+    font-family: Gilroy, sans-serif;
   }
 
   a:hover {
@@ -86,10 +92,10 @@
 
 .bottom {
   opacity: .5;
-  margin-top: 124px;
+  margin-top: 187px;
+  padding: 0 0 0 178px;
   font-family: Gilroy Light, sans-serif;
-  font-size: 13px;
-  padding: 0 0 0 130px;
+  font-size: 18px;
 }
 
 /* -------- responsive -------- */
