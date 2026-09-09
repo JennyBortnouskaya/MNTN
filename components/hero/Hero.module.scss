@@ -95,15 +95,32 @@
 }
 
 /* Скрываем на мобильных */
-@media (max-width: 710px) {
+@media (max-width: 1100px) {
   .leftSidebar {
-    display: none;
+    top: clamp(500px, 60svh, 560px);
+    bottom: auto;
+    left: 24px;
+    flex-direction: row;
+    gap: 16px;
+    padding: 0;
+    transform: none;
+
+    .followLabel {
+      padding: 0;
+      font-size: 14px;
+      writing-mode: initial;
+    }
+
+    .socialIcons {
+      flex-direction: row;
+      gap: 16px;
+    }
   }
 }
 
 /* -------- responsive -------- */
 
-@media (max-width: 1034px) {
+@media (max-width: 1100px) {
 
   .content h1 {
     font-size: 56px;
@@ -111,7 +128,16 @@
 
 }
 
-@media (max-width: 710px) {
+@media (max-width: 1100px) {
+
+  .hero {
+    height: auto;
+    min-height: min(100svh, 780px);
+    padding: clamp(160px, 20vw, 220px) 0 56px;
+    background:
+      linear-gradient(rgb(11 29 38 / 82%), rgb(11 29 38 / 92%)),
+      url("../../assets/main_bg.png") center top / cover no-repeat;
+  }
 
   .content {
     max-width: 90%;
@@ -119,6 +145,16 @@
 
   .content h1 {
     font-size: 40px;
+  }
+
+  .label {
+    gap: 16px;
+    font-size: 14px;
+    letter-spacing: 4px;
+  }
+
+  .line {
+    width: 48px;
   }
 
 }
@@ -129,4 +165,24 @@
     font-size: 32px;
   }
 
+  .scroll {
+    font-size: 16px;
+  }
+
+}
+
+@media (min-width: 1101px) and (max-width: 1300px) {
+  .hero {
+    padding-top: 12%;
+    padding-left: 20%;
+  }
+
+  .content h1 {
+    max-width: 720px;
+    font-size: 64px;
+  }
+
+  .leftSidebar {
+    left: 32px;
+  }
 }

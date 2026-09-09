@@ -24,11 +24,66 @@
   top: 340px;
   left: 130px;
 
-  @media (max-width: 710px) {
+  @media (max-width: 1100px) {
     margin-top: 30px;
   }
 
   img {
     border-radius: 10px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .section03Heading,
+  .section03Paragraph {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1101px) and (max-width: 1300px) {
+  .section03 {
+    padding: 80px 0;
+  }
+
+  .content {
+    top: 0;
+    left: 0;
+  }
+
+  .section03Heading {
+    width: 480px;
+    font-size: 48px;
+  }
+
+  .section03Paragraph {
+    width: 480px;
+  }
+
+  .section03Image {
+    top: auto;
+    left: auto;
+    margin: 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  .section03 {
+    padding: 56px 0;
+  }
+
+  .content {
+    top: 0;
+    left: 0;
+  }
+
+  .section03Heading,
+  .section03Paragraph {
+    width: 100%;
+  }
+
+  .section03Image {
+    top: auto;
+    left: auto;
+    margin: 0;
   }
 }

@@ -55,9 +55,33 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1240px) {
+  .inner {
+    flex-wrap: wrap;
+    row-gap: 12px;
+  }
+
+  .logo {
+    padding-left: 20px;
+    font-size: 26px;
+  }
+
   .nav {
-    display: none;
+    order: 3;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 24px;
+    padding: 8px 20px 0;
+
+    a {
+      font-size: 16px;
+    }
+  }
+
+  .account {
+    padding-right: 20px;
+    font-size: 16px;
   }
 
 }

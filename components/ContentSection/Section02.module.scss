@@ -25,3 +25,58 @@
   top: 139px;
   left: -61px;
 }
+
+@media (max-width: 1100px) {
+  .section02Heading,
+  .section02Paragraph {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1101px) and (max-width: 1300px) {
+  .section02 {
+    top: 0;
+    padding: 80px 0;
+  }
+
+  .content {
+    top: 0;
+    right: 0;
+  }
+
+  .section02Heading {
+    width: 480px;
+    font-size: 48px;
+  }
+
+  .section02Paragraph {
+    width: 480px;
+  }
+
+  .section02Image {
+    top: auto;
+    left: auto;
+  }
+}
+
+@media (max-width: 1100px) {
+  .section02 {
+    top: 0;
+    padding: 56px 0;
+  }
+
+  .content {
+    top: 0;
+    right: auto;
+  }
+
+  .section02Heading,
+  .section02Paragraph {
+    width: 100%;
+  }
+
+  .section02Image {
+    top: auto;
+    left: auto;
+  }
+}
