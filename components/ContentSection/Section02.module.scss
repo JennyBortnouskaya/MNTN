@@ -1,3 +1,5 @@
+@use "typography" as typography;
+
 .section02 {
   padding: 196px 0 1px;
   position: relative;
@@ -5,60 +7,21 @@
 }
 
 .section02Heading {
-  color: #fff;
-  letter-spacing: 1.1px;
-  margin: 0 0 34px;
-  font-family: Chronicle Display Roman, serif;
-  font-size: 64px;
-  font-weight: 500;
-  line-height: 1.16;
-  width: 600px;
-
-  @media (max-width: 1034px) {
-    font-size: 36px;
-  }
+  @include typography.heading;
 }
 
 .section02Paragraph {
-  letter-spacing: 0.5px;
-  color: #fff;
-  margin-bottom: 23px;
-  font-family: Gilroy, sans-serif;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 32px;
-  width: 636px;
-}
-
-.wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 120px;
-  align-items: center;
-
-  @media (max-width: 800px) {
-    grid-template-columns: 1fr;
-  }
+  @include typography.paragraph(636px);
 }
 
 .content {
   position: relative;
   max-width: 520px;
-  top: 193px;
-  right: 29px;
-}
-
-.number {
-  color: #ffffff0d;
-  // font-family: Gilroy Medium, sans-serif;
-  font-size: 200px;
-  font-weight: 700;
-  position: absolute;
-  top: -155px;
-  left: -148px;
+  top: 279px;
+  right: 28px;
 }
 
 .section02Image {
-  top: 55px;
+  top: 139px;
   left: -61px;
 }

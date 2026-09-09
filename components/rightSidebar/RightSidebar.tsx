@@ -73,16 +73,16 @@ export default function RightSidebar() {
 
     return (
         <nav className={styles.sidebar} ref={sidebarRef} aria-label="Page sections">
-            <ul>
+            <ul className={styles.list}>
                 {NAV.map((item) => (
                     <li
                         key={item.id}
                         ref={(el) => {
                             itemRefs.current[item.id] = el
                         }}
-                        className={active === item.id ? styles.active : ""}
+                        className={`${styles.item} ${active === item.id ? styles.active : ""}`}
                     >
-                        <a href={`#${item.href}`} onClick={scrollTo(item.href)}>
+                        <a className={styles.link} href={`#${item.href}`} onClick={scrollTo(item.href)}>
                             {item.label}
                         </a>
                     </li>

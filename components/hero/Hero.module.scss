@@ -9,29 +9,11 @@
   padding-left: 23.4%;
 }
 
-.bg {
-  position: absolute;
-  top: -30px;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  background: url("../../assets/main_bg.png");
-  background-size: cover;
-  z-index: -10;
-}
-
 .overlay {
   position: absolute;
   inset: 0;
   height: 200vh;
   z-index: -1;
-}
-.separator{
-  height: 86px;
-}
-
-.content {
-  //max-width: 630px;
 }
 
 .label {
@@ -46,14 +28,9 @@
   font-weight: 600;
   display: flex;
 
-  .line {
-    width: 72px;
-    height: 2px;
-    background-color: #fbd784;
-  }
 }
 .line {
-  width: 60px;
+  width: 72px;
   height: 2px;
   background-color: #fbd784;
 }
@@ -66,13 +43,6 @@
   font-size: 85px;
   line-height: 1.16;
 
-  @media (max-width: 1034px) {
-    font-size: 48px;
-  }
-
-  @media (max-width: 710px) {
-    font-size: 36px;
-  }
 }
 
 .scroll {

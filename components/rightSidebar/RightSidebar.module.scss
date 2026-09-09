@@ -1,88 +1,85 @@
 .sidebar {
+  --item-height: 28px;
+  --item-gap: 33px;
+
   position: fixed;
   top: 44%;
   right: 71px;
-  transform: translateY(-50%);
   z-index: 50;
   display: flex;
-  flex-direction: row;
   align-items: stretch;
   gap: 16px;
+  transform: translateY(-50%);
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0 14px 0 0;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  align-items: flex-end;
+  height: var(--item-height);
+  margin-bottom: var(--item-gap);
+  cursor: pointer;
+  font-family: Gilroy, sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  opacity: 0.6;
+  transition: opacity 0.3s ease, color 0.3s ease;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover,
+  &.active {
+    opacity: 1;
+  }
+}
+
+.active {
+  color: #fbd784;
+  font-weight: 600;
+}
+
+.link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
 }
 
 .track {
   position: relative;
   width: 3px;
-  flex-shrink: 0;
+  flex: 0 0 3px;
 }
 
-.line {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 1px;
-  transform: translateX(-50%);
-  background: rgba(255, 255, 255, 0.35);
-}
-
+.line,
 .indicator {
   position: absolute;
   left: 50%;
-  width: 3px;
   transform: translateX(-50%);
+}
+
+.line {
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgb(255 255 255 / 35%);
+}
+
+.indicator {
+  width: 3px;
   background: #fff;
-  transition: top 0.3s ease, height 0.3s ease;
   pointer-events: none;
+  transition: top 0.3s ease, height 0.3s ease;
 }
-
-.sidebar ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding: 0;
-  margin: 0 14px 0 0;
-}
-
-.sidebar li {
-  cursor: pointer;
-  opacity: .6;
-  margin: 0 0 33px;
-  font-family: Gilroy, sans-serif;
-  font-size: 18px;
-  line-height: 1;
-  transition: all .3s;
-  display: flex;
-  align-items: flex-end;
-  height: 28px;
-}
-
-.sidebar li:first-child {
-  margin-top: 0;
-}
-
-.sidebar li:last-child {
-  margin-bottom: 0;
-}
-
-.sidebar a {
-  color: inherit;
-  text-decoration: none;
-  display: block;
-}
-
-.sidebar li:hover {
-  opacity: 1;
-}
-
-.active {
-  opacity: 1;
-  color: #fbd784;
-  font-weight: 600;
-}
-
-/* ---------- responsive ---------- */
 
 @media (max-width: 710px) {
   .sidebar {

@@ -2,10 +2,12 @@
   width: 100%;
   background: #0b1d26;
   color: #fff;
-  padding: 315px 0 0 0;
+  padding-top: 315px;
 }
 
-.footer h1, .footer h2, .footer h3 {
+.footer h1,
+.footer h2,
+.footer h3 {
   font-family: Chronicle Display Roman, serif;
   font-size: 64px;
   font-weight: 500;
@@ -14,7 +16,8 @@
   color: #fff;
 }
 
-.footer span, .footer a {
+.footer span,
+.footer a {
   font-family: 'Gilroy', sans-serif;
   font-weight: 500;
   color: #fff;
@@ -30,7 +33,7 @@
   align-items: flex-start;
   gap: 38px;
   display: flex;
-  padding: 137px 0 0 0;
+  padding-top: 223px;
   height: 200px;
 }
 
@@ -47,8 +50,8 @@
   }
 
   p {
-    opacity: .8;
-    padding: 28px 0 0;
+    opacity: 0.8;
+    padding-top: 28px;
     font-family: Gilroy Medium, sans-serif;
     font-size: 18px;
     line-height: 1.8;
@@ -79,9 +82,9 @@
 
   a {
     text-decoration: none;
-    color: white;
+    color: #fff;
     opacity: 0.8;
-    transition: 0.3s;
+    transition: opacity 0.3s ease;
     font-family: Gilroy, sans-serif;
   }
 
@@ -91,14 +94,12 @@
 }
 
 .bottom {
-  opacity: .5;
-  margin-top: 187px;
-  padding: 0 0 0 178px;
+  opacity: 0.5;
+  margin-top: 250px;
+  padding-left: 178px;
   font-family: Gilroy Light, sans-serif;
   font-size: 18px;
 }
-
-/* -------- responsive -------- */
 
 @media (max-width: 1034px) {
 

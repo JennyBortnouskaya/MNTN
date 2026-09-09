@@ -12,7 +12,7 @@
 }
 
 .number {
-  color: #ffffff0d;
+  color: rgb(255 255 255 / 5%);
   font-family: Gilroy Medium, sans-serif;
   font-size: 225px;
   font-weight: 800;
@@ -22,10 +22,10 @@
   left: -144px;
 }
 .line {
-  background-color: #fbd784;
   width: 72px;
   height: 1px;
   margin: 0 24px 0 0;
+  background-color: #fbd784;
 }
 
 .label {
@@ -43,7 +43,7 @@
 
 .link {
   color: #fbd784;
-  letter-spacing: .8px;
+  letter-spacing: 0.8px;
   font-family: Gilroy, sans-serif;
   font-size: 18px;
   font-weight: 300;
@@ -53,20 +53,20 @@
   gap: 14px;
 }
 
-.arrow{
+.arrow {
   transform: rotate(270deg);
 }
 
-.image img {
-  object-fit: cover;
-  max-width: 566px;
-  max-height: 720px;
-  position: relative;
-  width: 100%;
-  height: 100%;
+.image {
+  img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 566px;
+    max-height: 720px;
+    object-fit: cover;
+  }
 }
-
-/* ---------- responsive ---------- */
 
 @media (max-width: 1034px) {
 

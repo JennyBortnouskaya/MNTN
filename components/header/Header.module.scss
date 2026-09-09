@@ -17,7 +17,7 @@
   letter-spacing: 2px;
   font-size: 30px;
   font-weight: 700;
-  padding: 0 0 0 29px;
+  padding-left: 29px;
 }
 
 .nav {
@@ -28,10 +28,10 @@
 
   a {
     text-decoration: none;
-    color: white;
+    color: #fff;
     font-size: 18px;
     opacity: 0.85;
-    transition: 0.3s;
+    transition: opacity 0.3s ease;
     font-family: Gilroy, sans-serif;
   }
 
@@ -51,14 +51,11 @@
 
   .icon {
     font-size: 20px;
-    color: white;
+    color: #fff;
   }
 }
 
-/* -------- responsive -------- */
-
 @media (max-width: 800px) {
-
   .nav {
     display: none;
   }
