@@ -94,7 +94,6 @@
   }
 }
 
-/* Скрываем на мобильных */
 @media (max-width: 1100px) {
   .leftSidebar {
     top: clamp(500px, 60svh, 560px);
@@ -184,5 +183,119 @@
 
   .leftSidebar {
     left: 32px;
+  }
+}
+
+@media (min-width: 1801px) {
+  .bg {
+    z-index: -1;
+    background: linear-gradient(to bottom, #0b1d267a 0%, #0b1d26b8 56%, var(--color-bg) 100%), url("../../assets/main_bg.png") center top / cover no-repeat;
+    height: 50%;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 1101px) and (max-width: 1199px) {
+  .bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    height: 1360px;
+    background:
+      linear-gradient(to bottom, rgb(11 29 38 / 52%) 0%, rgb(11 29 38 / 72%) 52%, var(--color-bg) 100%),
+      url("../../assets/main_bg.png") center top / cover no-repeat;
+  }
+
+  .hero {
+    height: auto;
+    min-height: 620px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1240px) {
+  .bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    height: 1232px;
+    background:
+      linear-gradient(to bottom, rgb(11 29 38 / 52%) 0%, rgb(11 29 38 / 72%) 50%, var(--color-bg) 100%),
+      url("../../assets/main_bg.png") center top / cover no-repeat;
+  }
+
+  .separator {
+    height: 0;
+    margin: 0;
+  }
+
+  .hero {
+    height: auto;
+    min-height: 600px;
+    padding-top: 18%;
+  }
+}
+
+@media (min-width: 1244px) and (max-width: 1538px) {
+  .bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    height: 1440px;
+    background:
+      linear-gradient(to bottom, rgb(11 29 38 / 48%) 0%, rgb(11 29 38 / 72%) 56%, var(--color-bg) 100%),
+      url("../../assets/main_bg.png") center top / cover no-repeat;
+  }
+
+  .hero {
+    height: auto;
+    min-height: 600px;
+    padding-top: 12%;
+    padding-left: 20%;
+  }
+
+  .content {
+    text-align: left;
+  }
+
+  .label,
+  .scroll {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1539px) and (max-width: 1600px) {
+  .bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    height: 1660px;
+    background:
+      linear-gradient(to bottom, rgb(11 29 38 / 48%) 0%, rgb(11 29 38 / 72%) 56%, var(--color-bg) 100%),
+      url("../../assets/main_bg.png") center top / cover no-repeat;
+  }
+}
+
+@media (min-width: 1601px) and (max-width: 1800px) {
+  .bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    height: 1900px;
+    background:
+      linear-gradient(to bottom, rgb(11 29 38 / 48%) 0%, rgb(11 29 38 / 72%) 56%, var(--color-bg) 100%),
+      url("../../assets/main_bg.png") center top / cover no-repeat;
   }
 }

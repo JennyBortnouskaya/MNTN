@@ -59,6 +59,20 @@
   }
 }
 
+@media (min-width: 1539px) and (max-width: 1600px) {
+  .section02 {
+    top: 93px;
+  }
+
+  .content {
+    top: 229px;
+  }
+
+  .section02Image {
+    top: 89px;
+  }
+}
+
 @media (max-width: 1100px) {
   .section02 {
     top: 0;
@@ -73,6 +87,28 @@
   .section02Heading,
   .section02Paragraph {
     width: 100%;
+  }
+
+  .section02Image {
+    top: auto;
+    left: auto;
+  }
+}
+
+@media (min-width: 1244px) and (max-width: 1538px) {
+  .section02 {
+    top: 0;
+    padding: 72px 0;
+  }
+
+  .content {
+    top: 0;
+    right: 0;
+    max-width: 480px;
+  }
+
+  .section02Paragraph {
+    width: 480px;
   }
 
   .section02Image {

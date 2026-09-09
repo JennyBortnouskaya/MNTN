@@ -66,6 +66,25 @@
   }
 }
 
+@media (min-width: 1539px) and (max-width: 1600px) {
+  .section03 {
+    padding-top: 97px;
+  }
+
+  .content {
+    top: 424px;
+    max-width: 520px;
+  }
+
+  .section03Paragraph {
+    width: 520px;
+  }
+
+  .section03Image {
+    top: 290px;
+  }
+}
+
 @media (max-width: 1100px) {
   .section03 {
     padding: 56px 0;
@@ -79,6 +98,28 @@
   .section03Heading,
   .section03Paragraph {
     width: 100%;
+  }
+
+  .section03Image {
+    top: auto;
+    left: auto;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1244px) and (max-width: 1538px) {
+  .section03 {
+    padding: 72px 0 160px;
+  }
+
+  .content {
+    top: 0;
+    left: 0;
+    max-width: 480px;
+  }
+
+  .section03Paragraph {
+    width: 480px;
   }
 
   .section03Image {
