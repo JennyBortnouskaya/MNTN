@@ -81,12 +81,14 @@
   transition: top 0.3s ease, height 0.3s ease;
 }
 
+/* Mobile & Tablet */
 @media (max-width: 1240px) {
   .sidebar {
     display: none;
   }
 }
 
+/* Tablet & Small Desktop */
 @media (min-width: 1241px) and (max-width: 1300px) {
   .sidebar {
     right: 32px;
