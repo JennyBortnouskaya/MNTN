@@ -1,0 +1,26 @@
+@mixin heading {
+  margin: 0 0 34px;
+  width: 600px;
+  color: #fff;
+  font-family: Chronicle Display Roman, serif;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: 1.1px;
+
+  /* Mobile & Tablet */
+  @media (max-width: 1240px) {
+    font-size: 36px;
+  }
+}
+
+@mixin paragraph($width) {
+  width: $width;
+  margin-bottom: 23px;
+  color: #fff;
+  font-family: Gilroy, sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 32px;
+  letter-spacing: 0.5px;
+}
