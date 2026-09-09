@@ -18,7 +18,10 @@ export default function RightSidebar() {
     const sidebarRef = useRef<HTMLElement>(null)
     const itemRefs = useRef<Record<string, HTMLLIElement | null>>({})
     const activeRef = useRef<NavId>(active)
-    activeRef.current = active
+
+    useEffect(() => {
+        activeRef.current = active
+    }, [active])
 
     const updateIndicator = useCallback((id: NavId) => {
         const sidebar = sidebarRef.current
