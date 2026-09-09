@@ -5,6 +5,7 @@ import Image, {StaticImageData} from 'next/image'
 import SouthOutlinedIcon from "@mui/icons-material/SouthOutlined";
 
 type Props = {
+    id?: string
     number: string
     label: string
     title: string
@@ -19,6 +20,7 @@ type Props = {
 }
 
 export default function ContentSection({
+                                           id,
                                            number,
                                            label,
                                            title,
@@ -32,7 +34,7 @@ export default function ContentSection({
                                            paragraphClassName,
                                        }: Props) {
     return (
-        <section className={className}>
+        <section id={id} className={className}>
             <div className="container">
 
                 <div className={`${styles.wrapper} ${reverse ? styles.reverse : ''}`}>

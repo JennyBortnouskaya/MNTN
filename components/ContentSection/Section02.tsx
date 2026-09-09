@@ -5,6 +5,7 @@ import styles from "./Section02.module.scss"
 export default function Section02() {
     return (
         <ContentSection
+            id="section02"
             number="02"
             label="HIKING ESSENTIALS"
             title="Picking the right Hiking Gear!"

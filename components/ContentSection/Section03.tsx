@@ -5,6 +5,7 @@ import styles from "./Section03.module.scss"
 export default function Section03() {
     return (
         <ContentSection
+            id="section03"
             number="03"
             label="WHERE YOU GO IS THE KEY"
             title="Understand Your Map & Timing"

@@ -5,6 +5,7 @@ import styles from './Section01.module.scss'
 export default function Section01() {
     return (
         <ContentSection
+            id="section01"
             number="01"
             label="GET STARTED"
             title="What level of hiker are you?"
